@@ -40,6 +40,7 @@ namespace Petshop
             using (SqlConnection con = new SqlConnection(ConString))
             {
                 //fill grid1
+                //nu e tocmai bun
                 CmdString = "SELECT S.Nume, S.Salariu " +
                     "FROM (SELECT TOP 3 A.Nume 'Nume', A.Prenume 'Prenume', A.Salariu 'Salariu' " +
                     "FROM Angajati A ORDER BY A.Salariu DESC ) S";
